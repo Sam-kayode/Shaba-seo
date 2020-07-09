@@ -121,7 +121,7 @@ height:20vh;
 right:-300px;
 margin-top:0;
 top:-300px;
-transition:.75s ease-in;
+transition:.75s ease-in-out;
 border-radius:49% 50% 50% 49% / 49% 51% 49% 51%   ;
 color: whitesmoke;
 z-index:200;
@@ -139,7 +139,7 @@ opacity:0.9;
 border-radius:68% 0% 0% 83% / 53% 0% 0% 46%  ;
 z-index:-1;
 box-shadow:6px 6px 14px 0  rgba(8, 112, 182, 0.959) inset,-8px -8px 18px 0 rgb(2, 34, 82) inset;
-  
+  transition:.75s ease-in-out;
 }
 
 .sidebar a:hover{
