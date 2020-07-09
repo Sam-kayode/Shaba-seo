@@ -138,11 +138,7 @@ opacity:0.9;
 border-radius:68% 0% 0% 83% / 53% 0% 0% 46%  ;
 z-index:-1;
 box-shadow:6px 6px 14px 0  rgba(8, 112, 182, 0.959) inset,-8px -8px 18px 0 rgb(2, 34, 82) inset;
-<<<<<<< HEAD
 transition:.75s ease-in-out;  
-=======
-  transition:.75s ease-in-out;
->>>>>>> 8793cd612826e8f8142897c48543f748b2d15d80
 }
 
 .sidebar a:hover{
