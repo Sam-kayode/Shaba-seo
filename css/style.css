@@ -8,7 +8,6 @@
 html,body{
   padding:0px;
   overflow-x:hidden;
-  -webkit-overflow-scrolling: smooth;
   margin:0;
   background-color: #eaeef6;
 }
@@ -121,7 +120,7 @@ height:20vh;
 right:-300px;
 margin-top:0;
 top:-300px;
-transition:.75s ease-in;
+transition:.75s ease-in-out;
 border-radius:49% 50% 50% 49% / 49% 51% 49% 51%   ;
 color: whitesmoke;
 z-index:200;
@@ -139,7 +138,7 @@ opacity:0.9;
 border-radius:68% 0% 0% 83% / 53% 0% 0% 46%  ;
 z-index:-1;
 box-shadow:6px 6px 14px 0  rgba(8, 112, 182, 0.959) inset,-8px -8px 18px 0 rgb(2, 34, 82) inset;
-  
+transition:.75s ease-in-out;  
 }
 
 .sidebar a:hover{
@@ -154,7 +153,7 @@ color: rgba(4, 40, 65, 0.9) !important;
 height:70vh;
 /*background-image:url("/images/bub.jpg");
 background-size: cover ;*/
-transition:.75s ;
+transition:.75s ease-in-out;
 
 }
 
@@ -219,13 +218,16 @@ position: relative;
 
 .url{
 border:0px solid white ;
-height:33px;
+height:px;
 border-radius:40px 0 0 40px;
 border-right:none;
 box-shadow:none;
 outline:none;
-padding:0 20% 0 0px;
+padding:10px 20% 10px 0px;
 width:90%;
+font-family: poiret one,cursive;
+font-weight:bolder;
+font-size:16px;
 }
 
 #front-page form{
@@ -268,11 +270,15 @@ top:0;
   height:33px;
   border-radius:70px 40px 40px 0;
   border:0px solid white;
-  padding:0 5px;
+  padding:22.5px 5.1px;
   background: linear-gradient(90deg, rgba(13,81,180,0.2) 0%, rgba(10,65,156,0.8) 100%),url("/images/bubble.png") center;
   box-shadow:6px 6px 14px 9px  rgba(48, 148, 230, 0.9) inset,-8px -8px 18px 0 rgba(35, 108, 216, 0.9) inset;
   position:absolute;
   right:0;
+  line-height:9px;
+  font-family:poiret one,cursive;
+  font-weight:bolder;
+  font-size: 16px;
 }
 
 .submit:hover{
@@ -354,20 +360,27 @@ box-shadow:  6px 6px 12px #dee2ea,
 }
  
   /*----------------------------------card-deck-----------------------------*/
-.card{
+
+  .card{
   border-radius: 20px;
   background: #eaeef6;
   box-shadow:  5px 5px 0px #e1e4ec, 
                -5px -5px 0px #f3f8ff;
                border:none !important;
-               max-width:250px ;
-               min-width:200px;
-margin:0 auto;
-
+              min-width:160px;
+              max-width:250px;
+            margin:0 auto;
+            text-align: center;
 }
 
 .card-deck h4{
   font-family:ravi prakash;
+}
+
+.gems{
+  width:50px;
+  height:50px;
+  margin:20px auto 0 auto;
 }
   
 /*-------------------------------------carousel---------------------------------*/
@@ -384,10 +397,6 @@ margin:0 auto;
   font-family:"ravi prakash",cursive;
 }
 
-.slide p{
-
-}
-
 .slide img{
   max-width:150px;
 }
@@ -402,6 +411,8 @@ margin:0 auto;
   .footer a{
 color:white;
 text-decoration:none;
+padding:5px;
+font-weight: lighter;
   }
 /*---------------------------------Media-Queries-----------------------------*/
 
