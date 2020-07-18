@@ -11,7 +11,9 @@ html,body{
   margin:0;
   background-color: #eaeef6;
 }
-
+ html svg{
+   display:block;
+ }
 /*----------------------------------Header-----------------------------*/
 header{
   background: rgb(118,145,184);
@@ -31,7 +33,7 @@ width:35px;
 z-index:2010000;
 font-size:25px;
 font-weight: bolder;
-background-color:rgba(70, 171, 238, 0.678);
+background-color:rgba(16, 50, 73, 0.678);
 box-shadow: 6px 6px 14px 0  rgba(21, 77, 182, 0.5) inset,-8px -8px 18px 0 rgba(10, 68, 156, 0.74) inset;
 cursor:pointer;
 border-radius: 15%;
